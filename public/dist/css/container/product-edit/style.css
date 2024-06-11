@@ -1,0 +1,74 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16;
+  gap: 8;
+}
+.form__title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16;
+  padding-bottom: 4;
+  color: #0d6efd;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 650px;
+  margin: 30px;
+  padding: 10px;
+  box-shadow: 1px 2px 1px 2px #ddd;
+}
+.form .content__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.form__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+}
+.form__label {
+  font-size: 14px;
+  padding-bottom: 4;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 4;
+  margin-bottom: 12;
+}
+.form__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form__button {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 8;
+  border-radius: 5px;
+  background: #0d6efd;
+  color: white;
+}
+.form__button-delete {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 8;
+  border-radius: 5px;
+  background: red;
+}
+
+.link-delete {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

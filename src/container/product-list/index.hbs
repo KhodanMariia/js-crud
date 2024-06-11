@@ -1,0 +1,38 @@
+<div class='form'>
+  <h1 class='form__title'>Список товару</h1>
+  <div class='product-list'>
+    {{#with data.products}}
+      {{#if isEmpty}}
+        <mark>Список продуктів пустий</mark>
+        <a href='/product-create'>Створити</a>
+      {{else}}
+        <ul class='list'>
+          {{#each list}}
+            <li class='list-item'>
+
+              <div class='product-card'>
+
+                <h1 class='product-card_title'>{{name}}</h1>
+                <p
+                  class='product-card_description'
+                >{{description}}</p>
+                <div class='product-card_id'>ID:{{id}}</div>
+
+                <div class='product-edit'>
+                  <p class='product-card_price'>
+                    {{price}}$</p>
+
+                  <a
+                    href='/product-edit?id={{id}}'
+                    class='product-card_link'
+                  >Редагувати</a>
+                </div>
+
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    {{/with}}
+  </div>
+</div>

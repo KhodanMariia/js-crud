@@ -1,0 +1,18 @@
+{{!-- {{#with data.products}} --}}
+<div class='product-card'>
+  {{!-- {{#each list}} --}}
+  <h1 class='product-card_title'>{{name}}</h1>
+  <p class='product-card_description'>{{description}}</p>
+  <div class='product-card_id'>ID:{{id}}</div>
+
+  <div class='product-edit'>
+    <p class='product-card_price'> {{price}}$</p>
+
+    <a
+      href='/product-edit?id={{id}}'
+      class='product-card_link'
+    >Редагувати</a>
+  </div>
+  {{!-- {{/each}} --}}
+</div>
+{{!-- {{/with}} --}}

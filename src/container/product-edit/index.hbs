@@ -1,0 +1,77 @@
+<div class='form'>
+  <h1 class='form__title'>Редагування товару</h1>
+  <form method='POST' action='/product-edit'>
+
+    <div class='form__content'>
+      <h4 class='content__title'>Інформація про товар</h4>
+      {{#with data.products}}
+        {{#each list}}
+
+          <div class='form__info'>
+            <div class='form__field'>
+              <label
+                for='product-name'
+                class='form__label'
+              >Назва товару</label>
+              <input
+                type='text'
+                name='name'
+                class='form__input'
+                value='{{name}}'
+              />
+            </div>
+
+            <div class='form__field'>
+              <label
+                for='product-price'
+                class='form__label'
+              >
+                Ціна</label>
+              <input
+                type='text'
+                name='price'
+                class='form__input'
+                value='{{price}}'
+              />
+            </div>
+
+            <div class='form__field'>
+              <label for='id' class='form__label'>ID</label>
+              <input
+                type='id'
+                name='id'
+                class='form__input'
+                value='{{id}}'
+              />
+            </div>
+          </div>
+
+          <div class='form__field'>
+            <label for='product-price' class='form__label'>
+              Короткий опис товару</label>
+            <input
+              type='text'
+              name='description'
+              class='form__input'
+              value='{{description}}'
+            />
+          </div>
+
+          <div class='form__buttons'>
+            <button class='form__button' type='submit'>
+              <a href='/product-edit'>
+                Зберегти оновлення</a></button>
+
+            <button class='form__button-delete'>
+              <a
+                href='/product-delete?id={{id}}'
+                class='link-delete'
+              >
+                Видалити товар</a></button>
+          </div>
+        {{/each}}
+      {{/with}}
+    </div>
+
+  </form>
+</div>

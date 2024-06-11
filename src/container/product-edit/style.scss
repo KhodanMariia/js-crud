@@ -1,0 +1,93 @@
+@use '../../lib/service.scss' as s;
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: s.space(4);
+    gap: s.space(2);
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: s.space(4);
+        padding-bottom: s.space(1);
+        color: s.color('prime');
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 650px;
+      margin: 30px;
+      padding: 10px;
+      box-shadow:1px 2px 1px 2px s.color('light');
+      
+    }
+
+    .content__title {
+        font-size: 16px;
+        font-weight: bold;
+        
+      }
+
+    &__info {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding-top: 10px;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        gap: s.space(2);
+    }
+
+    &__label {
+
+        font-size: 14px;
+        padding-bottom: s.space(1);  
+    }
+
+    &__input {
+    
+        border: 1px solid s.color('light');
+        padding: s.space(1);
+        margin-bottom: s.space(3);
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__button {
+        width: 300px;
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        border-radius: 5px;
+        background: s.color('prime');
+        color: #ffff;
+    }
+
+    &__button-delete {
+        width: 300px;
+        border: 1px solid s.color('light');
+        padding: s.space(2);
+        border-radius: 5px;
+        background: red;
+       
+
+    }
+}
+
+.link-delete {
+    text-decoration: none;
+    color: #ffff;
+}
+
+
+
